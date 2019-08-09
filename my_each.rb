@@ -3,8 +3,13 @@ def my_each(words)
 
   while words.length > i
     yield words[i]
-    i = i + 1
+    i += 1
   end
 
     words
+end
+
+collection = [1, 2, 3, 4]
+my_each(collection) do |i|
+  puts i
 end
